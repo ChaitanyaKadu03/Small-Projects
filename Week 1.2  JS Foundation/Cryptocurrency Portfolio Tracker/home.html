@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Bazar</title>
+    <style>
+      body {
+        margin: 0;
+        font-size: 18px;
+      }
+      table, th, tr {
+        border: 1px solid;
+        background-color: rgba(210, 105, 30, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="crypto-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Current Price</th>
+          <th>1h Change</th>
+          <th>24h Change</th>
+          <th>7d Change</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <form id="add-form">
+      <select></select>
+      <input type="number" placeholder="00"/>
+      <button id="add-form-btn">Add</button>
+      <button id="remove-form-btn">Remove</button>
+    </form>
+    <table id="portfolio-table">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Name</td>
+          <td>Purchase Price</td>
+          <td>Amount</td>
+          <td>Total (in $)</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table id="historical-data">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Historical Prices</th>
+          <th>Average Price</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
